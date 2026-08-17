@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Snaptory — Pokémon card collection tracker</title>
+<meta name="description" content="Point your camera at a Pokémon card and know what it is and what it's worth. Offline card recognition, daily market prices, no account.">
+<style>
+  :root {
+    --bg: #fff6e9;
+    --surface: #ffffff;
+    --surface-alt: #fdecd5;
+    --ink: #2a1f14;
+    --ink-mid: #6b5643;
+    --accent: #e88a5a;
+    --line: rgba(80, 50, 20, 0.12);
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 3.5rem 1.25rem 4rem;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.65 "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+  main { max-width: 46rem; margin: 0 auto; }
+  h1 { font-size: 2.6rem; line-height: 1.1; margin: 0 0 .5rem; letter-spacing: -.03em; }
+  .tagline { font-size: 1.15rem; color: var(--ink-mid); margin: 0 0 2.5rem; }
+  h2 { font-size: 1.15rem; margin: 0 0 .4rem; letter-spacing: -.01em; }
+  p { color: var(--ink-mid); }
+  a { color: var(--accent); }
+  .features { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); margin: 0 0 2.5rem; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 1.25rem;
+  }
+  .card p { margin: 0; font-size: .95rem; }
+  nav { margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--line); }
+  nav a { margin-right: 1.25rem; }
+  footer { margin-top: 2.5rem; font-size: .88rem; color: var(--ink-mid); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Snaptory</h1>
+  <p class="tagline">
+    Point your camera at a Pokémon card and know what it is, and what it's worth.
+  </p>
+
+  <div class="features">
+    <div class="card">
+      <h2>Recognises cards offline</h2>
+      <p>
+        Card recognition runs entirely on your iPhone against a catalogue built into the
+        app — no upload, no waiting on a connection. Useful where you actually need it:
+        at a card show, in a shop, in a queue.
+      </p>
+    </div>
+    <div class="card">
+      <h2>Daily market prices</h2>
+      <p>
+        Every card is matched to market data that refreshes once a day, with a 30-day
+        history so you can see which way a card has moved.
+      </p>
+    </div>
+    <div class="card">
+      <h2>Your binder, organised</h2>
+      <p>
+        Record condition, quantity, and what you paid. Build collections and track how
+        close each one is to complete.
+      </p>
+    </div>
+    <div class="card">
+      <h2>No account, no tracking</h2>
+      <p>
+        Snaptory has no sign-in and collects nothing. Your collection lives on your
+        phone and stays there.
+      </p>
+    </div>
+  </div>
+
+  <nav>
+    <a href="privacy.html">Privacy policy</a>
+    <a href="support.html">Support</a>
+  </nav>
+
+  <footer>
+    Snaptory is an independent app. It is not produced by, endorsed by, or affiliated
+    with Nintendo, Creatures Inc., GAME FREAK inc., The Pokémon Company, or TCGplayer.
+    Card data courtesy of <a href="https://pokemontcg.io">pokemontcg.io</a>; market
+    prices derived from TCGplayer data via <a href="https://tcgcsv.com">TCGCSV</a>.
+    Pokémon and all related names are trademarks of their respective owners.
+  </footer>
+</main>
+</body>
+</html>

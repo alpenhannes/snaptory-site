@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Snaptory</title>
+<style>
+  :root {
+    --bg: #fff6e9;
+    --surface: #ffffff;
+    --ink: #2a1f14;
+    --ink-mid: #6b5643;
+    --accent: #e88a5a;
+    --line: rgba(80, 50, 20, 0.12);
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 2.5rem 1.25rem 4rem;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.65 "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+  main { max-width: 46rem; margin: 0 auto; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 .35rem; letter-spacing: -.02em; }
+  h2 { font-size: 1.2rem; margin: 2.25rem 0 .6rem; letter-spacing: -.01em; }
+  .updated { color: var(--ink-mid); font-size: .9rem; margin: 0 0 2rem; }
+  p, li { color: var(--ink-mid); }
+  a { color: var(--accent); }
+  ul { padding-left: 1.25rem; }
+  li { margin: .4rem 0; }
+  .q { color: var(--ink); font-weight: 700; margin: 1.6rem 0 .3rem; }
+  .callout {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 1.1rem 1.25rem;
+    margin: 1.5rem 0;
+  }
+  .callout p { margin: 0; }
+  footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line); font-size: .9rem; color: var(--ink-mid); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Support</h1>
+  <p class="updated">Snaptory · Last updated 17 August 2026</p>
+
+  <div class="callout">
+    <p>
+      Need help, found a bug, or scanned a card that came back wrong?
+      Email <a href="mailto:CONTACT_EMAIL">CONTACT_EMAIL</a> and include your iOS
+      version and the card involved — that is usually enough to reproduce it.
+    </p>
+  </div>
+
+  <h2>Common questions</h2>
+
+  <p class="q">A card scanned as the wrong card.</p>
+  <p>
+    Snaptory matches on the printed artwork, so different prints of the same artwork
+    are the hardest case — a reverse holo and its regular version share an image, and
+    some reprints are identical apart from a set symbol. Tap "that's not right" on the
+    result to pick from the near matches. If a specific card is reliably wrong, please
+    report it.
+  </p>
+
+  <p class="q">Scanning is not recognising anything.</p>
+  <p>
+    Fill the on-screen frame with the card, keep it flat and roughly square to the
+    camera, and avoid direct glare on holo cards — reflections change the artwork the
+    match relies on. Sleeved cards work, but a glossy or heavily scuffed sleeve makes
+    it harder.
+  </p>
+
+  <p class="q">A price looks wrong or is missing.</p>
+  <p>
+    Prices come from a market snapshot that refreshes once a day, so a card that moved
+    sharply today may lag until tomorrow. Some cards have no price at all: TCGplayer
+    does not list every card individually, and sealed-product-only promos in particular
+    often have no single-card market price to report.
+  </p>
+
+  <p class="q">Do I need an internet connection?</p>
+  <p>
+    Not for scanning — card recognition is entirely on-device, and Snaptory ships with
+    card names and a price snapshot built in, so a brand-new install works offline.
+    A connection lets it fetch card images and refresh prices.
+  </p>
+
+  <p class="q">Where is my collection stored? Is it backed up?</p>
+  <p>
+    On your iPhone, and only there. Snaptory has no account and no cloud sync, which is
+    why it needs no personal data — but it also means deleting the app deletes your
+    collection, and it cannot be recovered. See the
+    <a href="privacy.html">privacy policy</a>.
+  </p>
+
+  <p class="q">Will you add Android, iPad, or cloud sync?</p>
+  <p>
+    Snaptory is iPhone-only for now. Feature requests are welcome by email.
+  </p>
+
+  <footer>
+    Snaptory is an independent app. It is not produced by, endorsed by, or affiliated
+    with Nintendo, Creatures Inc., GAME FREAK inc., The Pokémon Company, or TCGplayer.
+    Card data courtesy of <a href="https://pokemontcg.io">pokemontcg.io</a>; market
+    prices derived from TCGplayer data via <a href="https://tcgcsv.com">TCGCSV</a>.
+    Pokémon and all related names are trademarks of their respective owners.
+  </footer>
+</main>
+</body>
+</html>
