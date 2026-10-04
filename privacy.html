@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy Policy — Snaptory</title>
+<title>Privacy Policy - Snaptory</title>
 <style>
   :root {
     --bg: #fff6e9;
@@ -48,36 +48,53 @@
 <body>
 <main>
   <h1>Privacy Policy</h1>
-  <p class="updated">Snaptory · Last updated 17 August 2026</p>
+  <p class="updated">Snaptory - Last updated 4 October 2026</p>
 
   <div class="callout">
     <p>Snaptory does not collect, store, or transmit any personal data. There is no
-    account, no analytics, and no tracking.</p>
+    account, no analytics, and no tracking. The only thing that ever reaches us is a
+    feedback message you choose to send.</p>
   </div>
 
   <h2>Your collection stays on your device</h2>
   <p>
-    Everything you record in Snaptory — the cards you own, their condition, quantity,
-    what you paid, and any collections you build — is stored in a database on your
+    Everything you record in Snaptory - the cards you own, their condition, quantity,
+    what you paid, and any collections you build - is stored in a database on your
     iPhone. It is never uploaded to us or to anyone else. We operate no servers that
     hold your data, because there are none to hold it.
   </p>
   <p>
-    Deleting the app deletes that data. There is no cloud copy, which also means we
-    cannot recover it for you.
+    Your inventory, collections and piles are included in your device's own iCloud or
+    Google backup. Exports are created only when you tap Export, and go only where you
+    send them. We never receive either, which also means we cannot recover your data
+    for you.
   </p>
 
   <h2>Camera images never leave your phone</h2>
   <p>
     Snaptory identifies cards by comparing them against a catalogue of card
     fingerprints that ships inside the app. That comparison happens entirely on your
-    device, using Apple's on-device vision framework. Camera frames are processed in
-    memory and discarded — they are never saved to your photo library, never uploaded,
-    and never sent to any third party.
+    device, using Apple's on-device vision framework. Live camera frames are processed
+    in memory. The optional photo fallback writes a temporary app file and deletes it
+    after processing. Images are never saved to your photo library, uploaded, or sent
+    to any third party.
   </p>
   <p>
     Snaptory requests camera access for this and only this. It does not request access
     to your photo library, contacts, location, or microphone.
+  </p>
+
+  <h2>Feedback you send</h2>
+  <p>
+    If you use Send feedback in the More tab, the text you write is sent together with
+    the app version, your platform and OS version, and the version of the card catalog
+    on your device. Nothing else is attached: no name, email address, account,
+    collection data, or device identifier. The message passes through a small
+    Cloudflare Worker that we operate and is delivered to a private Discord channel
+    that only the developer reads. Cloudflare and Discord process it under their own
+    privacy policies, and Cloudflare sees your IP address as with any request. Do not
+    put personal details in a message unless you want us to have them. Nothing is sent
+    unless you tap Send.
   </p>
 
   <h2>Network requests the app makes</h2>
@@ -95,20 +112,21 @@
     </thead>
     <tbody>
       <tr>
-        <td><a href="https://pokemontcg.io">pokemontcg.io</a></td>
-        <td>Card and set details — names, numbers, rarities, artists.</td>
-      </tr>
-      <tr>
-        <td>images.pokemontcg.io, images.scrydex.com</td>
+        <td>images.pokemontcg.io, images.scrydex.com, assets.tcgdex.net</td>
         <td>Card images shown in the app.</td>
       </tr>
       <tr>
         <td>github.com</td>
         <td>
-          A single daily price file. Snaptory downloads one shared snapshot per day
-          rather than querying prices per card, so no request reveals which cards you
-          own.
+          Shared daily price and history files, plus versioned catalog, scanner, and
+          marketplace-map files. These cover the whole catalog rather than querying
+          per card, so no request reveals which cards you own.
         </td>
+      </tr>
+      <tr>
+        <td>snaptory-feedback.steffen-appelhans.workers.dev (Cloudflare), then Discord</td>
+        <td>Only when you tap Send in the feedback sheet: your message and the version
+          details described above.</td>
       </tr>
     </tbody>
   </table>
@@ -121,7 +139,8 @@
     <li>No advertising, and no advertising identifiers.</li>
     <li>No third-party tracking SDKs.</li>
     <li>No crash- or performance-reporting service.</li>
-    <li>No selling or sharing of data — there is no data to sell.</li>
+    <li>No selling or sharing of data. Feedback you send is read by the developer and
+      never sold.</li>
   </ul>
 
   <h2>Children</h2>
@@ -139,7 +158,9 @@
 
   <h2>Contact</h2>
   <p>
-    Questions about this policy or about Snaptory: <a href="mailto:CONTACT_EMAIL">CONTACT_EMAIL</a>.
+    Questions about this policy or about Snaptory can be sent through the
+    <a href="https://github.com/alpenhannes/snaptory-site/issues/new">Snaptory support request page</a>.
+    Requests are public, so do not include personal or sensitive information.
   </p>
 
   <footer>
