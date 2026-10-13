@@ -48,12 +48,14 @@
 <body>
 <main>
   <h1>Privacy Policy</h1>
-  <p class="updated">Snaptory - Last updated 4 October 2026</p>
+  <p class="updated">Snaptory - Last updated 13 October 2026</p>
 
   <div class="callout">
-    <p>Snaptory does not collect, store, or transmit any personal data. There is no
-    account, no analytics, and no tracking. The only thing that ever reaches us is a
-    feedback message you choose to send.</p>
+    <p>Snaptory has no account and does not collect your name, email address, or
+    location. Your collection never leaves your phone. The app sends anonymous crash
+    reports and anonymous usage events, which you can switch off, and a feedback
+    message or a wrong-card report only if you choose to send one. Nothing we receive
+    identifies you, and nothing is used for advertising or tracking.</p>
   </div>
 
   <h2>Your collection stays on your device</h2>
@@ -74,10 +76,11 @@
   <p>
     Snaptory identifies cards by comparing them against a catalogue of card
     fingerprints that ships inside the app. That comparison happens entirely on your
-    device, using Apple's on-device vision framework. Live camera frames are processed
+    device, using your phone's own vision software. Live camera frames are processed
     in memory. The optional photo fallback writes a temporary app file and deletes it
-    after processing. Images are never saved to your photo library, uploaded, or sent
-    to any third party.
+    after processing. Images are never saved to your photo library, and camera images
+    are never uploaded automatically. The one exception is a wrong-card report, below,
+    which you send yourself after seeing exactly what goes.
   </p>
   <p>
     Snaptory requests camera access for this and only this. It does not request access
@@ -95,6 +98,52 @@
     privacy policies, and Cloudflare sees your IP address as with any request. Do not
     put personal details in a message unless you want us to have them. Nothing is sent
     unless you tap Send.
+  </p>
+
+  <h2>Wrong-card reports</h2>
+  <p>
+    When Snaptory names the wrong card, a Wrong card? link lets you report it. The
+    report shows you what will be sent before you tap Send report: a small picture of
+    the card the camera saw, the cards the scanner considered, and the printed number it
+    read. It carries no name, email address, or identifier, and it is sent only when
+    you tap Send report. It is delivered to our analytics service (below) and used only
+    to improve card recognition.
+  </p>
+
+  <h2>Anonymous usage and crash data</h2>
+  <p>
+    Snaptory sends anonymous crash reports and anonymous usage events to PostHog, an
+    analytics service hosted in the European Union (Frankfurt). Usage events record
+    things such as that a card was scanned or added (with the card's catalogue id,
+    name and set), that a price link was opened, that the subscription offer was
+    shown and from where, and once a day a summary of coarse counts (for example how many
+    collections exist, in size ranges) and the app language. Crash reports contain the
+    technical error and the app, device model, OS version and time zone. They do not
+    contain the contents of your collection, your search text, or what you paid.
+  </p>
+  <p>
+    There is no account and no persistent identifier: the analytics service gets a
+    new random identifier every time the app starts, so events from different launches
+    cannot be joined to each other or to a person. Your IP address is discarded and
+    is not used to estimate your location. The phone's operating-system crash
+    component keeps one random installation number that is sent only when the app
+    asks the analytics service for its configuration, never with events or crash
+    reports. We use this data to find and fix bugs, to see which features are used,
+    and to measure scan speed.
+  </p>
+  <p>
+    You can switch usage events off in More, Settings, Privacy, Share anonymous usage
+    data. Crash reports are not covered by that switch, and a wrong-card report is
+    always your own choice. Nothing here is sold or shared for advertising.
+  </p>
+
+  <h2>Subscriptions</h2>
+  <p>
+    Snaptory Pro is bought through the App Store or Google Play. The store handles
+    payment and tells your phone whether a subscription is active. We receive no
+    payment details, name, or email address, and we run no server that stores your
+    subscription. Our analytics records that the subscription offer was viewed and
+    which plan was purchased, without any identifier.
   </p>
 
   <h2>Network requests the app makes</h2>
@@ -128,6 +177,16 @@
         <td>Only when you tap Send in the feedback sheet: your message and the version
           details described above.</td>
       </tr>
+      <tr>
+        <td>eu.i.posthog.com (PostHog, EU)</td>
+        <td>Anonymous crash reports and usage events, and wrong-card reports you send,
+          as described above.</td>
+      </tr>
+      <tr>
+        <td>App Store or Google Play</td>
+        <td>Subscription purchase and status, handled by the store under its own
+          privacy policy.</td>
+      </tr>
     </tbody>
   </table>
   </div>
@@ -135,18 +194,19 @@
   <h2>What Snaptory does not do</h2>
   <ul>
     <li>No account, sign-in, or email address required.</li>
-    <li>No analytics or usage tracking of any kind.</li>
-    <li>No advertising, and no advertising identifiers.</li>
-    <li>No third-party tracking SDKs.</li>
-    <li>No crash- or performance-reporting service.</li>
-    <li>No selling or sharing of data. Feedback you send is read by the developer and
-      never sold.</li>
+    <li>No tracking across apps or websites, and no advertising identifiers.</li>
+    <li>No advertising and no advertising SDKs.</li>
+    <li>No person-level profiles: analytics identifiers do not survive an app launch.</li>
+    <li>No selling of data. Anonymous analytics are processed for us by PostHog and
+      used for nothing else. Feedback and wrong-card reports you send are read by the
+      developer and never sold.</li>
   </ul>
 
   <h2>Children</h2>
   <p>
-    Snaptory is suitable for all ages. Because it collects no personal information from
-    anyone, it collects none from children.
+    Snaptory is not directed at children under 13 and has no account or sign-up. It
+    collects no personal information from anyone, children included, and its anonymous
+    analytics carry no identifier that survives an app launch.
   </p>
 
   <h2>Changes to this policy</h2>
@@ -158,9 +218,10 @@
 
   <h2>Contact</h2>
   <p>
-    Questions about this policy or about Snaptory can be sent through the
-    <a href="https://github.com/alpenhannes/snaptory-site/issues/new">Snaptory support request page</a>.
-    Requests are public, so do not include personal or sensitive information.
+    Questions about this policy or about Snaptory can be sent to
+    <a href="mailto:snaptory@happyholos.com">snaptory@happyholos.com</a>. You can also use the
+    <a href="https://github.com/alpenhannes/snaptory-site/issues/new">public support request page</a>,
+    but requests there are public, so do not include personal or sensitive information.
   </p>
 
   <footer>
